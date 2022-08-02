@@ -1,0 +1,35 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "identity": {
+  "principalId": "2bf31d0e-6272-4b91-8ddf-acdbc64443d1",
+  "tenantId": "ccdbb447-7829-4963-b9ad-31445b114761",
+  "type": "SystemAssigned"
+ },
+ "properties": {
+  "displayName": "Initiative-Testing",
+  "policyDefinitionId": "/subscriptions/221805ca-66be-4a28-a647-6de287efaba6/providers/Microsoft.Authorization/policySetDefinitions/e3780231558041b3976e4483",
+  "scope": "/subscriptions/221805ca-66be-4a28-a647-6de287efaba6",
+  "notScopes": [],
+  "parameters": {
+   "LogAnalyticsWorkspace": {
+    "value": "Associate-Logs"
+   }
+  },
+  "metadata": {
+   "assignedBy": "(Admin) Liam Pullin",
+   "parameterScopes": {},
+   "createdBy": "cf977d81-54b3-44c9-9206-723e2c821483",
+   "createdOn": "2022-07-27T19:18:42.1883639Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/subscriptions/221805ca-66be-4a28-a647-6de287efaba6/providers/Microsoft.Authorization/policyAssignments/7ce0df4266194a3d9b6975c9",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "7ce0df4266194a3d9b6975c9",
+ "location": "uksouth"
+}

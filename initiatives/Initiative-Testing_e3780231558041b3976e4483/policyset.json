@@ -1,0 +1,132 @@
+{
+ "properties": {
+  "displayName": "Initiative-Testing",
+  "policyType": "Custom",
+  "description": "",
+  "metadata": {
+   "parameterScopes": {
+    "logAnalytics": "/subscriptions/221805ca-66be-4a28-a647-6de287efaba6",
+    "eventHubRuleId": "/subscriptions/221805ca-66be-4a28-a647-6de287efaba6"
+   },
+   "createdBy": "cf977d81-54b3-44c9-9206-723e2c821483",
+   "createdOn": "2022-07-27T19:16:36.1362697Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {
+   "LogAnalyticsWorkspace": {
+    "type": "string",
+    "metadata": {
+     "displayName": "LogAnalyticsWorkspace",
+     "portalReview": true
+    }
+   }
+  },
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "Deploy - Configure Log Analytics extension to be enabled on Windows virtual machines_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/0868462e-646c-4fe3-9ced-a733534b6a2c",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('LogAnalyticsWorkspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Deploy Log Analytics extension for Linux VMs_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/053d3325-282c-4e5c-b944-24faffd30d77",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('LogAnalyticsWorkspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Configure Azure Activity logs to stream to specified Log Analytics workspace_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2465583e-4e78-4c15-b6be-a36cbc7c8b0f",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('LogAnalyticsWorkspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Deploy Diagnostic Settings for Key Vault to Log Analytics workspace_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/bef3f64c-5290-43b7-85b0-9b254eef4c47",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('LogAnalyticsWorkspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Configure diagnostic settings for storage accounts to Log Analytics workspace_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/6f8f98a4-f108-47cb-8e98-91a0d85cd474",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('LogAnalyticsWorkspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Deploy Diagnostic Settings for Logic Apps to Log Analytics workspace_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/b889a06c-ec72-4b03-910a-cb169ee18721",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('LogAnalyticsWorkspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Deploy Diagnostic Settings for Event Hub to Log Analytics workspace_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1f6e93e8-6b31-41b1-83f6-36e449a42579",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('LogAnalyticsWorkspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Deploy Diagnostic Settings for Data Lake Storage Gen1 to Log Analytics workspace_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/25763a0a-5783-4f14-969e-79d4933eb74b",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('LogAnalyticsWorkspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Deploy Diagnostic Settings for Batch Account to Log Analytics workspace_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/c84e5349-db6d-4769-805e-e14037dab9b5",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('LogAnalyticsWorkspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Deploy Diagnostic Settings for Azure SQL Database to Event Hub_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/9a7c7a7d-49e5-4213-bea8-6a502b6272e0",
+    "parameters": {
+     "eventHubRuleId": {
+      "value": "[parameters('LogAnalyticsWorkspace')]"
+     }
+    },
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/subscriptions/221805ca-66be-4a28-a647-6de287efaba6/providers/Microsoft.Authorization/policySetDefinitions/e3780231558041b3976e4483",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "e3780231558041b3976e4483"
+}
