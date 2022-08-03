@@ -1,0 +1,50 @@
+{
+ "properties": {
+  "displayName": "New-Initiative-03.08.2022",
+  "policyType": "Custom",
+  "metadata": {
+   "parameterScopes": {
+    "logAnalytics": "/subscriptions/221805ca-66be-4a28-a647-6de287efaba6"
+   },
+   "createdBy": "cf977d81-54b3-44c9-9206-723e2c821483",
+   "createdOn": "2022-08-03T13:50:27.3390628Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {
+   "Log Analytics Workspace": {
+    "type": "string",
+    "metadata": {
+     "displayName": "Log Analytics Workspace",
+     "portalReview": true
+    }
+   }
+  },
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "Deploy - Configure Log Analytics extension to be enabled on Windows virtual machines_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/0868462e-646c-4fe3-9ced-a733534b6a2c",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics Workspace')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Deploy Log Analytics extension for Linux VMs. See deprecation notice below_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/053d3325-282c-4e5c-b944-24faffd30d77",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Log Analytics Workspace')]"
+     }
+    },
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/subscriptions/221805ca-66be-4a28-a647-6de287efaba6/providers/Microsoft.Authorization/policySetDefinitions/2b86dfc8f22943de827a3d89",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "2b86dfc8f22943de827a3d89"
+}
